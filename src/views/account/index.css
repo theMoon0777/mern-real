@@ -1,0 +1,43 @@
+.css-zow5z4-MuiGrid-root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.account_alertBox__NrEaj {
+    text-align: center;
+    width: 360px;
+}
+
+.account-create-btn {
+    background-color: #5c53c5;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+}
+
+.account_header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 130px;
+}
+
+.signin-link {
+    color: white;
+    text-decoration: none;
+}
+
+.account-div {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 420px) {
+    .account_alertBox__NrEaj {
+        width: 100% !important;
+    }
+
+}

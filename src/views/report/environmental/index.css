@@ -1,0 +1,104 @@
+.climate-div {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    display: flex;
+    background-color: white;
+    padding: 30px 30px;
+}
+
+.risk-div {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.summary-div {
+    flex: 4;
+}
+
+.lx {
+    display: flex;
+}
+
+.radio-div {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background-color: #a3c74f;
+    border: none;
+}
+
+.align-center {
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.relative-span {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.overal-span {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400px;
+}
+
+.c-g-s {
+    column-gap: 0.5rem;
+}
+
+#acrdn_panel_9 {
+    background-color: white;
+}
+
+#env-parent {
+    padding-left: 0px;
+}
+
+#acrdn_header_6 {
+    background-color: #f0eeff;
+}
+
+.summary-duv-p {
+    text-align: center;
+}
+
+.climate-risk-header {
+    display: flex;
+    align-items: center;
+    column-gap: 0.75rem;
+}
+
+.environment-child-part {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right {
+    text-align: right;
+}
+
+.flood-map-div {
+    width: 100%;
+    height: 300px;
+    overflow: auto;
+    background-color: #ddd;
+}
+
+@media screen and (max-width: 640px) {
+    .climate-div {
+        flex-direction: column;
+    }
+
+    .radio-div {
+        margin-right: -20px;
+    }
+
+    th {
+        padding-right: 0px !important;
+    }
+}

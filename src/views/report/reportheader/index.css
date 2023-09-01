@@ -1,0 +1,24 @@
+.report-header {
+    background: linear-gradient(0deg,rgba(73,63,195,.5),rgba(73,63,195,.5)),linear-gradient(110.68deg,#382fa6 5.88%,#4f44ce 14.89%,#382fa6 41.12%,#8277ff 50.61%,#4f44ce 59.44%,#5f54da 95.62%,#382fa6 105.93%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px 32px;
+    border: 1px solid #cecbee;
+    box-shadow: 0 0 15px rgba(215,211,255,.08);
+    border-radius: 16px;
+}
+.report-header-head {
+    color: #fff;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+}
+.report-header-p {
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 14px;
+} 

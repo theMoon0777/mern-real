@@ -1,0 +1,110 @@
+.climate-div {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    display: flex;
+    background-color: white;
+    padding: 30px 30px;
+}
+
+.risk-div {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.summary-div {
+    flex: 4;
+}
+
+.lx {
+    display: flex;
+}
+
+.radio-div {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background-color: #a3c74f;
+    border: none;
+}
+
+.align-center {
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.relative-span {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.overal-span {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400px;
+}
+
+.c-g-s {
+    column-gap: 0.5rem;
+}
+
+#acrdn_panel_9 {
+    background-color: white;
+}
+
+#env-parent {
+    padding-left: 0px;
+}
+
+#acrdn_header_6 {
+    background-color: #f0eeff;
+}
+
+
+@media screen and (max-width: 800px) {
+    .css-1o42tkx {
+        padding: 10px !important;
+    }
+
+    .css-gg4vpm {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .css-1afcqb7 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #numberpart1 {
+        font-size: 20px;
+    }
+
+    #numberpart {
+        font-size: 20px;
+        color: white;
+    }
+
+    #plunk-remodal {
+        text-align: center;
+    }
+
+    #plunk-remodal-container {
+        text-align: center;
+    }
+
+    .css-126n10b {
+        display: none;
+    }
+
+    .css-1kfvdq9-MuiTable-root {
+        min-width: 180px;
+    }
+
+    .css-phgkob-MuiPaper-root-MuiTableContainer-root {
+        height: 400px;
+    }
+}

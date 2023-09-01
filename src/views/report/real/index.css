@@ -1,0 +1,153 @@
+.report-container {
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.report-content {
+    column-gap: 2rem;
+    display: flex;
+}
+
+.report-content-left {
+    flex: 7;
+}
+
+.report-content-right {
+    flex: 3;
+}
+
+.e-acrdn-header {
+    background: none !important;
+}
+
+.report-content-content {
+    border: none;
+    border-radius: 15px;
+    margin-top: 30px;
+    background-color: white;
+    padding: 24px 32px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.report-content-content-header {
+    display: flex;
+    column-gap: 0.75rem;
+    align-items: center;
+}
+
+.report-content-content-body {
+    margin-top: 20px;
+}
+
+.report-content-content-btn-group {
+    display: flex;
+    column-gap: 1.5rem;
+}
+
+.report-content-content-btn {
+    color: #5C53C5;
+    width: auto !important;
+    height: 32px;
+    font-size: 12px;
+    background: #F0EEFF;
+    padding-left: 20px;
+    border-radius: 8px;
+    padding-right: 20px;
+    border: none;
+    transition: 0.5s;
+}
+
+.report-content-content-btn:hover {
+    color: #4b42b4;
+    background: #e1ddee;
+}
+
+.report-content-content-footer {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    column-gap: 0.5rem;
+}
+
+.report-content-content-text {
+    flex: 1;
+    border: none;
+    padding: 5px 5px;
+    font-size: 16px;
+}
+
+.report-content-submit-btn {
+    color: #ffffff;
+    width: 96px;
+    height: 32px;
+    font-size: 12px;
+    max-width: 96px;
+    background: #5C53C5;
+    border-radius: 8px;
+    border: none;
+}
+
+.mb-0 {
+    margin-bottom: 0px;
+}
+
+.lh-1 {
+    line-height: 1.1rem;
+}
+
+#navbar-example3 {
+    position: sticky;
+    top: 100px;
+}
+
+.print-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.print-btn {
+    border: none;
+}
+
+.dialog-part {
+    padding: 10px 35px;
+    display: flex;
+    column-gap: 7.5rem;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.checkbox-input {
+    width: 20px;
+}
+
+.checkbox-label {
+    font-size: 20px;
+}
+
+#print-btn-modal {
+    background-color: #5C53C5;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    border-radius: 20px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1324px) {
+    .report-content {
+        flex-direction: column;
+    }
+
+    .report-content-right {
+        display: none;
+    }
+
+    .dialog-part {
+        column-gap: 0.5rem;
+    }
+}
