@@ -284,11 +284,6 @@ const PlunkRemodelValue = () => {
   );
 };
 
-const remodal = () => {
-  axios.post('http://localhost:7000/api/home-value', addressObj).then((res) => {
-    dispatch(setValue(res.data));
-  });
-};
 
 export const MarketTrends = () => {
   return (
@@ -303,7 +298,7 @@ export const MarketTrends = () => {
           </AccordionItemsDirective>
         </AccordionComponent>
       </div>
-      <div className="permit-accordian-div" id="item-14-2">
+      {/* <div className="permit-accordian-div" id="item-14-2">
         <AccordionComponent>
           <AccordionItemsDirective>
             <AccordionItemDirective header="Plunk Market Insights™" content={PlunkMarketInsight} />
@@ -323,7 +318,7 @@ export const MarketTrends = () => {
             <AccordionItemDirective header="Plunk Remodel Value™" content={PlunkRemodelValue} />
           </AccordionItemsDirective>
         </AccordionComponent>
-      </div>
+      </div> */}
       <div className="font-size-xs gray-dark mt-s mb-s">Source(s): Zoneomics</div>
     </div>
   );
