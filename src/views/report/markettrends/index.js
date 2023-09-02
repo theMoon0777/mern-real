@@ -93,7 +93,7 @@ const PlunkHomeValue = () => {
         </div>
       </div>
       <div>
-        <button className="big-accuracy-btn">Plunk Home Value™ API</button>
+        <button className="big-accuracy-btn">Plunk Home Value™</button>
       </div>
     </div>
   );
@@ -149,7 +149,7 @@ const PlunkMarketInsight = () => {
             <div></div>
             <span>90day average</span>
           </div>
-          <div>
+          <div className='linechart-container-custom'>
             <span>103.21%</span>
             <LineChart
               width={500}
@@ -165,7 +165,7 @@ const PlunkMarketInsight = () => {
         </div>
       </div>
       <div>
-        <button className="big-accuracy-btn font-size-22 market-insight-btn">Plunk Market Insights™ API</button>
+        <button className="big-accuracy-btn font-size-22 market-insight-btn">Plunk Market Insights™</button>
       </div>
     </div>
   );
@@ -215,12 +215,13 @@ const PlunkHomeCompare = () => {
           </div>
         </div>
         <div>Numbers Of Bathrooms</div>
-        <div>
-          <HomeCompareChart />
-        </div>
+
+      </div>
+      <div className='compare-chart'>
+        <HomeCompareChart />
       </div>
       <div>
-        <button className="big-accuracy-btn">Home Compare API</button>
+        <button className="big-accuracy-btn">Home Compare</button>
       </div>
     </div>
   );
@@ -278,7 +279,7 @@ const PlunkRemodelValue = () => {
         </div>
       </div>
       <div>
-        <button className="big-accuracy-btn remodel-btn">Plunk Remodel Value API</button>
+        <button className="big-accuracy-btn remodel-btn">Plunk Remodel Value</button>
       </div>
     </div>
   );
