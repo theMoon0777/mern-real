@@ -63,6 +63,271 @@
     background-color: #f0eeff;
 }
 
+.plunk-parent {
+    width: 900px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    padding: 30px 30px;
+    background-color: #eee;
+}
+
+.plunk-comp {
+    width: 45%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2f7fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    row-gap: 0.75rem;
+}
+
+.plunk-comp-header {
+    color: #2d78ff;
+    font-size: 30px;
+}
+
+.plunk-comp-des {
+    color: rgb(100, 102, 102);
+    font-size: 20px;
+    text-align: center;
+}
+
+.plunk-comp-main {
+    background-color: white;
+    overflow: hidden;
+    width: 80%;
+    padding: 15px 10px;
+    row-gap: 1.5rem;
+}
+
+.plunk-value-title {
+    font-size: 18px;
+}
+
+.lx {
+    display: flex;
+}
+
+.thumb_p6OvR {
+    width: 20px;
+}
+
+.value-price-big {
+    font-size: 40px;
+}
+
+.value-price-small {
+    font-size: 28px;
+}
+
+.value-day {
+    font-size: 24px;
+}
+
+.accuracy-btn {
+    padding: 10px 15px;
+    font-size: 22px;
+}
+
+.chart-container {
+    transform: scale3d(0.5, 0.5, 0.5);
+}
+
+.small-logo {
+    width: 80px;
+}
+
+.font-size-22 {
+    font-size: 22px;
+}
+
+.remodel-bar-parent {
+    width: 40px;
+    height: 10px;
+}
+
+.remodel-bar-part {
+    width: 35px;
+    height: 52px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.remodel-comp {
+    text-align: right;
+    padding-right: 5px;
+    justify-content: space-between;
+}
+
+.remodel-comp-price {
+    font-size: 20px;
+}
+
+.big-accuracy-btn {
+    font-size: 26px;
+    padding: 10px 15px;
+}
+
+.h-335 {
+    height: 335px;
+}
+
+.bar-next-div {
+    justify-content: space-evenly;
+}
+
+.bar-next-div-span {
+    font-size: 14px;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.lx-col {
+    flex-direction: column;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.font-size-s {
+    font-size: 10px;
+}
+
+.font-size-normal {
+    font-size: 14px;
+}
+
+.font-size-big {
+    font-size: 24px;
+}
+
+.color-spec {
+    color: #0e446d;
+}
+
+.color-green {
+    color: #008c60;
+}
+
+.font-weight-normal {
+    font-weight: 600;
+}
+
+.bgcolor-lightblue {
+    color: #87b3fa;
+}
+
+.bgcolor-blue {
+    color: #2d78ff;
+}
+
+.color-white {
+    color: white;
+}
+
+.accuracy-btn {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #87b3fa;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.big-accuracy-btn {
+    background-color: #2d78ff;
+    border: none;
+    border-radius: 8px;
+    margin: 10px 0px;
+    color: white;
+}
+
+.color-lightspec {
+    color: #809caf;
+}
+
+.bg-gray {
+    background-color: #ddd;
+}
+
+.bg-blue {
+    background-color: #2d78ff;
+}
+
+.remodel-comp {
+    background-color: #b6f0df;
+}
+
+.remodel-bar-parent {
+    background-color: #00805a;
+}
+
+.remodel-bar-part {
+    background-color: #00d89c;
+}
+
+.lx-2 {
+    flex: 2;
+}
+
+.lx-1 {
+    flex: 1;
+}
+
+.right {
+    text-align: right;
+}
+
+@media screen and (max-width: 1660px) {
+    .plunk-parent {
+        width: 800px;
+    }
+
+    .market-insight-des {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .market-insight-btn {
+        font-size: 22px;
+    }
+
+    .remodel-des {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .remodel-btn {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .plunk-parent {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 1281px) {
+    .plunk-parent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plunk-comp {
+        width: 80%;
+    }
+}
 
 @media screen and (max-width: 800px) {
     .css-1o42tkx {
@@ -106,5 +371,97 @@
 
     .css-phgkob-MuiPaper-root-MuiTableContainer-root {
         height: 400px;
+    }
+
+
+    .css-10vg0a6-MuiResponsiveChart-container {
+        transform: scale3d(0.5, 0.3, 0.5);
+        left: -130px;
+        top: -80px;
+    }
+
+
+    .checkdiv {
+        width: 10px;
+        height: 10px;
+        border: none;
+    }
+
+    .plunk-comp {
+        width: 100%;
+    }
+
+    .chart-container {
+        width: 220px;
+        height: 220px;
+        transform: scale3d(1, 1.3, 1.4);
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .plunk-parent {
+        padding: 10px 5px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .plunk-comp-header {
+        font-size: 16px;
+    }
+
+    .plunk-comp-des {
+        font-size: 14px;
+    }
+
+    .e-acrdn-content {
+        padding: 10px 2px;
+    }
+
+    .plunk-value-title {
+        font-size: 14px;
+    }
+
+    .value-price-big {
+        font-size: 22px;
+    }
+
+    .value-price-small {
+        font-size: 18px;
+    }
+
+    .value-day {
+        font-size: 16px;
+    }
+
+    .accuracy-btn {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    .small-logo {
+        width: 50px;
+    }
+
+    .big-accuracy-btn {
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+
+    .plunk-comp-main {
+        width: 100%;
+    }
+
+    .chart-container {
+        width: 180px;
+    }
+
+    .remodel-comp {
+        flex: 1;
+    }
+
+    .bar-next-div-span {
+        flex: 1;
+        font-size: 12px;
     }
 }
