@@ -10,7 +10,6 @@ import { setValue } from '../../../store/slice/homeslice';
 import './index.css';
 
 import { AccordionComponent, AccordionItemsDirective, AccordionItemDirective } from '@syncfusion/ej2-react-navigations';
-// import { HomeCompareChart } from './homeCompareChart';
 import { useEffect } from 'react';
 import axios from 'axios';
 
@@ -19,8 +18,6 @@ const gradient = (a, b) => {
 }
 
 const bzCurve = (ctx, color, width, points, f, t) => {
-
-
   ctx.setLineDash([0]);
   ctx.lineWidth = width;
   ctx.strokeStyle = color;
@@ -64,8 +61,6 @@ const bzCurve = (ctx, color, width, points, f, t) => {
 
 const PlunkHomeValue = () => {
   // const [homeprice ,setHomeprice] = useState("");
-
-
   const dispatch = useDispatch();
   const { value } = useSelector((state) => state.home);
 
@@ -79,12 +74,10 @@ const PlunkHomeValue = () => {
     zipcode: '85044'
   };
 
-
   useEffect(() => {
     axios.post('http://localhost:7000/api/home-value', addressObj).then((res) => {
       dispatch(setValue(res.data));
     });
-
   }, [dispatch]);
 
   useEffect(() => {
@@ -94,7 +87,6 @@ const PlunkHomeValue = () => {
 
 
   return (
-
     <div className="plunk-comp">
       <div className='plunk-comp-header'>
         Plunk Home Value™
@@ -133,6 +125,7 @@ const PlunkHomeValue = () => {
     </div>
   );
 };
+
 const plunkParent = () => {
   return (
     <div className="plunk-parent">
@@ -143,6 +136,7 @@ const plunkParent = () => {
     </div>
   )
 }
+
 const PlunkMarketInsight = () => {
   // const dispatch = useDispatch();
 
@@ -161,7 +155,6 @@ const PlunkMarketInsight = () => {
   // }, [insights])
 
   useEffect(() => {
-
     var cv = document.querySelector('#my-canvas');
     var ctx = cv.getContext('2d');
     ctx.clearRect(0, 0, cv.width, cv.height);
@@ -245,7 +238,6 @@ const PlunkMarketInsight = () => {
               </div>
             </div>
           </div>
-
         </div>
         <div className="chart-container">
           <div className="lx">
@@ -276,7 +268,6 @@ const PlunkMarketInsight = () => {
               </div>
             </div>
           </div>
-
         </div>
         <div className="chart-container">
           <div className="lx">
@@ -294,9 +285,7 @@ const PlunkMarketInsight = () => {
               98.3%
             </div>
             <div className="canvas-part">
-              <canvas id="my-canvas2" width="150" height="40">
-
-              </canvas>
+              <canvas id="my-canvas2" width="150" height="40"></canvas>
             </div>
             <div className='canvas-end-pro-div lx lx-col align-center'>
               <div className='end-pro-span'>
@@ -307,7 +296,6 @@ const PlunkMarketInsight = () => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
       <div>
@@ -459,6 +447,7 @@ const PlunkHomeCompare = () => {
     </div>
   );
 };
+
 const PlunkRemodelValue = () => {
   return (
     <div className="plunk-comp">
@@ -518,7 +507,6 @@ const PlunkRemodelValue = () => {
   );
 };
 
-
 export const MarketTrends = () => {
   return (
     <div className="report-content-content" id="item-14">
@@ -534,5 +522,5 @@ export const MarketTrends = () => {
       </div>
       <div className="font-size-xs gray-dark mt-s mb-s">Source(s): Zoneomics</div>
     </div>
-  );
+  )
 };
