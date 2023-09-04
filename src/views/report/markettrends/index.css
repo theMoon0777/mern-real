@@ -32,7 +32,7 @@
 
 .align-center {
     align-items: center;
-    column-gap: 0.5rem;
+    column-gap: 0.1rem;
 }
 
 .relative-span {
@@ -106,12 +106,24 @@
     row-gap: 1.5rem;
 }
 
+.plunk-comp-main1 {
+    row-gap: 0.5rem;
+}
+
 .plunk-value-title {
     font-size: 18px;
 }
 
 .lx {
     display: flex;
+}
+
+.compare-home-group-part {
+    column-gap: 0.1rem !important;
+}
+
+.column-gap-small {
+    column-gap: 0.5rem;
 }
 
 .thumb_p6OvR {
@@ -135,16 +147,22 @@
     font-size: 22px;
 }
 
-.chart-container {
-    transform: scale3d(0.5, 0.5, 0.5);
-}
-
 .small-logo {
     width: 80px;
 }
 
 .font-size-22 {
     font-size: 22px;
+}
+
+.font-size-xs {
+    font-size: 8px;
+}
+
+.parent-spec-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .remodel-bar-parent {
@@ -174,8 +192,13 @@
     padding: 10px 15px;
 }
 
-.h-335 {
-    height: 335px;
+.h-313 {
+    height: 313px;
+}
+
+.compare-91436 {
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .bar-next-div {
@@ -188,6 +211,10 @@
 
 .space-between {
     justify-content: space-between;
+}
+
+.end {
+    justify-content: end;
 }
 
 .lx-col {
@@ -204,6 +231,26 @@
 
 .font-size-normal {
     font-size: 14px;
+}
+
+.h-328 {
+    height: 328px;
+}
+
+.bb-gray {
+    border-bottom: 1px solid lightgray;
+}
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+
+.over-hidden {
+    overflow: hidden;
+}
+
+.bedroom-group {
+    row-gap: 0.3rem;
 }
 
 .font-size-big {
@@ -296,6 +343,49 @@
     justify-content: center;
 }
 
+.chart-container {
+    width: 95%;
+}
+
+.canvas-status-div {
+    column-gap: 0.5rem;
+}
+
+.canvas-part {
+    border-bottom: 1px solid #ddd;
+}
+
+.color-blue {
+    color: blue;
+    font-weight: 600;
+}
+
+.color-red {
+    color: red;
+}
+
+.color-gray {
+    color: gray;
+}
+
+.end-pro-span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gray-radio-div {
+    width: 10px;
+    height: 10px;
+    border: none;
+    background-color: #eee;
+    border-radius: 999px;
+}
+
+.check-div {
+    width: 14px;
+    height: 14px;
+}
+
 @media screen and (max-width: 1660px) {
     .plunk-parent {
         width: 800px;
@@ -317,6 +407,22 @@
 
     .remodel-btn {
         font-size: 22px;
+    }
+
+    .linechart-container-custom {
+        column-gap: 0rem !important;
+    }
+
+    #my-canvas {
+        width: 140px !important;
+    }
+
+    #my-canvas1 {
+        width: 140px !important;
+    }
+
+    #my-canvas2 {
+        width: 140px !important;
     }
 }
 
@@ -414,6 +520,18 @@
     .plunk-parent {
         padding: 10px 5px;
     }
+
+    #my-canvas {
+        width: 100px !important;
+    }
+
+    #my-canvas1 {
+        width: 100px !important;
+    }
+
+    #my-canvas2 {
+        width: 100px !important;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -461,6 +579,7 @@
 
     .plunk-comp-main {
         width: 100%;
+        padding: 2px;
     }
 
     .chart-container {
@@ -476,8 +595,15 @@
         font-size: 12px;
     }
 
-    .linechart-container-custom {
-        width: 200px;
-        height: 200px;
+    .hidden-span {
+        display: none;
+    }
+
+    .canvas-start-pro-div {
+        font-size: 10px;
+    }
+
+    .end-pro-span {
+        font-size: 14px;
     }
 }
