@@ -1,7 +1,5 @@
-
 import { useEffect, useState } from "react";
 import "./index.css";
-
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -9,23 +7,15 @@ import TableContainer from '@mui/material/TableContainer';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { AccordionComponent, AccordionItemsDirective, AccordionItemDirective } from '@syncfusion/ej2-react-navigations';
-
 import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Inject, BubbleSeries } from '@syncfusion/ej2-react-charts';
 
- 
-
-
 export const ReportValuation = () => {
-
     const [valuation, setValuation] = useState({});
-
     const options = {
         method: 'GET',
-        headers: {accept: 'application/json', 'X-Api-Key': 'b3a1f7002a8e4b1da8da6c58071f27e2'}
-      };
-      
-      
-   
+        headers: { accept: 'application/json', 'X-Api-Key': 'b3a1f7002a8e4b1da8da6c58071f27e2' }
+    };
+
     const data = [
         { x: 92.2, y: 7.8, size: 1.347, text: 'China' },
         { x: 74, y: 6.5, size: 1.241, text: 'India' },
@@ -43,69 +33,69 @@ export const ReportValuation = () => {
     const primaryxAxis = { title: 'Literacy Rate', minimum: 60, maximum: 100, interval: 5 };
     const primaryyAxis = { title: 'GDP growth rate', minimum: -2, maximum: 16, interval: 2 };
 
-    useEffect(()=>{
+    useEffect(() => {
         fetch('https://api.rentcast.io/v1/avm/value?address=5500%20Grand%20Lake%20Drive%2C%20San%20Antonio%2C%20TX%2C%2078244&propertyType=Single%20Family&bedrooms=4&bathrooms=2&squareFootage=1600&compCount=5', options)
             .then(response => response.json())
             .then(response => setValuation(response))
             .catch(err => console.error(err));
-        }, []);
+    }, []);
 
-        const valuationComp = () => {
-            console.log("valuation comp ____",valuation);
-            return (
-                <TableContainer component={Paper}>
-                    <Table sx={{ minWidth: 650 }} aria-label="simple table">
-                        <TableBody>
-                            {
-                                !valuation.comparables ? "" : valuation.comparables.map((data , key)=> 
-                                    
-                                    <TableRow
-                                        key={key}
-                                        sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                                        >
-                                        <TableCell component="th" scope="row">
-                                            <p className="mb-xs">${data.price}</p>
-                                                <p className="mb-xs font-size-xs">Valuation</p>
-                                        </TableCell>
-                                        <TableCell align="left">
-                                            <p className="mb-xs">$1,099.355</p>
-                                            <p className="mb-xs font-size-xs">Min</p>
-                    
-                                        </TableCell>
-                                        <TableCell align="left">
-                                            <p className="mb-xs">$1,185,754</p>
-                                            <p className="mb-xs font-size-xs">Max</p>
-                    
-                                        </TableCell>
-                                        <TableCell align="left">
-                                            <p className="mb-xs">98</p>
-                                            <p className="mb-xs font-size-xs">Confidence</p>
-                    
-                                        </TableCell>
-                                    </TableRow>
-                                )
-                            }
-                
-                        </TableBody>
-                    </Table>
-                </TableContainer>
-            )
-        }
-        const insightComp = () => {
-            return (
-                <div>
-                    <div className="insight-part">
-                        <span>Avg.Valuation</span><span>${!valuation.price? "" : valuation.price}</span>
-                    </div>
-                    <div className="insight-part">
-                        <span>Avg.Min</span><span>${!valuation.priceRangeLow? "" : valuation.priceRangeLow}</span>
-                    </div>
-                    <div className="insight-part">
-                        <span>Avg.Max</span><span>${!valuation.priceRangeHigh? "" : valuation.priceRangeHigh}</span>
-                    </div>
+    const valuationComp = () => {
+        console.log("valuation comp ____", valuation);
+        return (
+            <TableContainer component={Paper}>
+                <Table sx={{ minWidth: 650 }} aria-label="simple table">
+                    <TableBody>
+                        {
+                            !valuation.comparables ? "" : valuation.comparables.map((data, key) =>
+
+                                <TableRow
+                                    key={key}
+                                    sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                                >
+                                    <TableCell component="th" scope="row">
+                                        <p className="mb-xs">${data.price}</p>
+                                        <p className="mb-xs font-size-xs">Valuation</p>
+                                    </TableCell>
+                                    <TableCell align="left">
+                                        <p className="mb-xs">$1,099.355</p>
+                                        <p className="mb-xs font-size-xs">Min</p>
+
+                                    </TableCell>
+                                    <TableCell align="left">
+                                        <p className="mb-xs">$1,185,754</p>
+                                        <p className="mb-xs font-size-xs">Max</p>
+
+                                    </TableCell>
+                                    <TableCell align="left">
+                                        <p className="mb-xs">98</p>
+                                        <p className="mb-xs font-size-xs">Confidence</p>
+
+                                    </TableCell>
+                                </TableRow>
+                            )
+                        }
+
+                    </TableBody>
+                </Table>
+            </TableContainer>
+        )
+    }
+    const insightComp = () => {
+        return (
+            <div>
+                <div className="insight-part">
+                    <span>Avg.Valuation</span><span>${!valuation.price ? "" : valuation.price}</span>
                 </div>
-            )
-        }
+                <div className="insight-part">
+                    <span>Avg.Min</span><span>${!valuation.priceRangeLow ? "" : valuation.priceRangeLow}</span>
+                </div>
+                <div className="insight-part">
+                    <span>Avg.Max</span><span>${!valuation.priceRangeHigh ? "" : valuation.priceRangeHigh}</span>
+                </div>
+            </div>
+        )
+    }
     return (
         <div className="report-content-value">
             <div className="report-content-content-header" id="item-2">
@@ -123,16 +113,16 @@ export const ReportValuation = () => {
                 </svg>
             </div>
             <div className="report-content-chart">
-            <ChartComponent id='charts' primaryXAxis={primaryxAxis} primaryYAxis={primaryyAxis} title='GDP vs Literacy Rate'>
-            <Inject services={[BubbleSeries]}/>
-            <SeriesCollectionDirective>
-                <SeriesDirective dataSource={data} xName='x' yName='y' size='size' type='Bubble' name='pound'>
-                </SeriesDirective>
-            </SeriesCollectionDirective>
-          </ChartComponent>
+                <ChartComponent id='charts' primaryXAxis={primaryxAxis} primaryYAxis={primaryyAxis} title='GDP vs Literacy Rate'>
+                    <Inject services={[BubbleSeries]} />
+                    <SeriesCollectionDirective>
+                        <SeriesDirective dataSource={data} xName='x' yName='y' size='size' type='Bubble' name='pound'>
+                        </SeriesDirective>
+                    </SeriesCollectionDirective>
+                </ChartComponent>
             </div>
             <div className="report-content-valuation">
-                
+
                 <AccordionComponent>
                     <AccordionItemsDirective>
                         <AccordionItemDirective header='Valuations' content={valuationComp} />

@@ -199,54 +199,47 @@ const childcomp = () => {
 const tr1 = () => {
     return (
         <TableContainer component={Paper}>
-
-        <Table sx={{ minWidth: 650 }} aria-label="simple table">
-        <TableBody>
-            <TableRow
-                key="0"
-                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                >
-                <TableCell component="th" scope="row">
-                    <div className="radio-div"></div>
-                </TableCell>
-                <TableCell align="left">
-                    <p className="mb-xs">$1,099.355</p>
-                    <p className="mb-xs font-size-xs">Min</p>
-
-                </TableCell>
-                <TableCell align="left">
-                    <p className="mb-xs">$1,185,754</p>
-                    <p className="mb-xs font-size-xs">Max</p>
-
-                </TableCell>
-                <TableCell align="left">
-                    <p className="mb-xs">98</p>
-                    <p className="mb-xs font-size-xs">Confidence</p>
-
-                </TableCell>
-            </TableRow>
-            </TableBody>
-                        </Table>
-                    </TableContainer>
-
+            <Table sx={{ minWidth: 650 }} aria-label="simple table">
+                <TableBody>
+                    <TableRow
+                        key="0"
+                        sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                    >
+                        <TableCell component="th" scope="row">
+                            <div className="radio-div"></div>
+                        </TableCell>
+                        <TableCell align="left">
+                            <p className="mb-xs">$1,099.355</p>
+                            <p className="mb-xs font-size-xs">Min</p>
+                        </TableCell>
+                        <TableCell align="left">
+                            <p className="mb-xs">$1,185,754</p>
+                            <p className="mb-xs font-size-xs">Max</p>
+                        </TableCell>
+                        <TableCell align="left">
+                            <p className="mb-xs">98</p>
+                            <p className="mb-xs font-size-xs">Confidence</p>
+                        </TableCell>
+                    </TableRow>
+                </TableBody>
+            </Table>
+        </TableContainer>
     )
 }
 
 const tablecomp = () => {
     return (
-                       
-            <AccordionComponent>
-                <AccordionItemsDirective>
-                    <AccordionItemDirective header = {tr1} content={childcomp}/>
-                    <AccordionItemDirective header = {tr1} content={childcomp}/>
-                    <AccordionItemDirective header = {tr1} content={childcomp}/>
-                    <AccordionItemDirective header = {tr1} content={childcomp}/>
-                    <AccordionItemDirective header = {tr1} content={childcomp}/>
-                    <AccordionItemDirective header = {tr1} content={childcomp}/>
-                    <AccordionItemDirective header = {tr1} content={childcomp}/>
-                </AccordionItemsDirective>
-            </AccordionComponent>
-                           
+        <AccordionComponent>
+            <AccordionItemsDirective>
+                <AccordionItemDirective header={tr1} content={childcomp} />
+                <AccordionItemDirective header={tr1} content={childcomp} />
+                <AccordionItemDirective header={tr1} content={childcomp} />
+                <AccordionItemDirective header={tr1} content={childcomp} />
+                <AccordionItemDirective header={tr1} content={childcomp} />
+                <AccordionItemDirective header={tr1} content={childcomp} />
+                <AccordionItemDirective header={tr1} content={childcomp} />
+            </AccordionItemsDirective>
+        </AccordionComponent>
     )
 }
 
@@ -255,13 +248,13 @@ const whether = () => {
     const uData = [4000, 3000, 2000, 2780, 1890, 2390, 3490];
     const pData = [2400, 1398, 9800, 3908, 4800, 3800, 4300];
     const xLabels = [
-    'Page A',
-    'Page B',
-    'Page C',
-    'Page D',
-    'Page E',
-    'Page F',
-    'Page G',
+        'Page A',
+        'Page B',
+        'Page C',
+        'Page D',
+        'Page E',
+        'Page F',
+        'Page G',
     ];
     return (
         <LineChart

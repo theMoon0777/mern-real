@@ -1,43 +1,40 @@
 import './index.css';
-
 import { AccordionComponent, AccordionItemsDirective, AccordionItemDirective } from '@syncfusion/ej2-react-navigations';
 
-// import GoogleMapReact from 'google-map-react';
-// const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 const childcomp = () => {
-  return (
-    <div className="childcomp-div">
-      <div className="zoning-part">
-        <span>Accessory Dwelling unit</span>
-      </div>
-      <div className="zoning-part">
-        <span>Adult day care</span>
-      </div>
-      <div className="zoning-part">
-        <span>Assembly hall</span>
-      </div>
-      <div className="zoning-part">
-        <span>Bank</span>
-      </div>
-      <div className="zoning-part"><span>Beauty and Barber Shop</span></div>
-      <div className="zoning-part"><span>Bed and Breakfast</span></div>
-      <div className="zoning-part"><span>Child Care Home</span></div>
-      <div className="zoning-part"><span>Child care facility</span></div>
-      <div className="zoning-part"><span>Conservation lot</span></div>
-      <div className="zoning-part"><span>Conversion Of Existing Dwelling To Accommodate not more than 2 units</span></div>
-      <div className="zoning-part"><span>Dwelling 2 Family</span></div>
-      <div className="zoning-part"><span>Dwelling 3 to 4 Family</span></div>
-      <div className="zoning-part"><span>Educational institution k 12</span></div>
-      <div className="zoning-part"><span>Farm</span></div>
-      <div className="zoning-part"><span>Farm Animals For Family Use for non commercial purposes on lots containing a one or Two Family Dwelling</span></div>
-      <div className="zoning-part"><span>Office</span></div>
-      <div className="zoning-part"><span>Personal service establishment</span></div>
-      <div className="zoning-part"><span>Public Recreation</span></div>
-      <div className="zoning-part"><span>Public Utility</span></div>
-      <div className="zoning-part"><span>Retail On site</span></div>
-    </div>
-  )
+    return (
+        <div className="childcomp-div">
+            <div className="zoning-part">
+                <span>Accessory Dwelling unit</span>
+            </div>
+            <div className="zoning-part">
+                <span>Adult day care</span>
+            </div>
+            <div className="zoning-part">
+                <span>Assembly hall</span>
+            </div>
+            <div className="zoning-part">
+                <span>Bank</span>
+            </div>
+            <div className="zoning-part"><span>Beauty and Barber Shop</span></div>
+            <div className="zoning-part"><span>Bed and Breakfast</span></div>
+            <div className="zoning-part"><span>Child Care Home</span></div>
+            <div className="zoning-part"><span>Child care facility</span></div>
+            <div className="zoning-part"><span>Conservation lot</span></div>
+            <div className="zoning-part"><span>Conversion Of Existing Dwelling To Accommodate not more than 2 units</span></div>
+            <div className="zoning-part"><span>Dwelling 2 Family</span></div>
+            <div className="zoning-part"><span>Dwelling 3 to 4 Family</span></div>
+            <div className="zoning-part"><span>Educational institution k 12</span></div>
+            <div className="zoning-part"><span>Farm</span></div>
+            <div className="zoning-part"><span>Farm Animals For Family Use for non commercial purposes on lots containing a one or Two Family Dwelling</span></div>
+            <div className="zoning-part"><span>Office</span></div>
+            <div className="zoning-part"><span>Personal service establishment</span></div>
+            <div className="zoning-part"><span>Public Recreation</span></div>
+            <div className="zoning-part"><span>Public Utility</span></div>
+            <div className="zoning-part"><span>Retail On site</span></div>
+        </div>
+    )
 }
 
 const childcomp1 = () => {
@@ -50,7 +47,6 @@ const childcomp1 = () => {
             <div className="zoning-part"><span>Elderly assisted care home</span></div>
             <div className="zoning-part"><span>Helicopter Take Offs and Landings</span></div>
             <div className="zoning-part"><span>Nursing Home</span></div>
-
         </div>
     )
 }
@@ -63,36 +59,23 @@ const infocomp = () => {
             <div className="zoning-part lx space-between"><span>Zone Name</span><span>Low Density Residental</span></div>
             <div className="zoning-part lx space-between"><span>Zone Code</span><span>R-20</span></div>
             <div className="zoning-part lx space-between"><span>Zone Code Link</span><span><a>Link</a></span></div>
-            <div className="zoning-part lx space-between"><span>Zone Type</span><span>Residential</span></div>       
+            <div className="zoning-part lx space-between"><span>Zone Type</span><span>Residential</span></div>
         </div>
     )
 }
 
 const tablecomp = () => {
     return (
-                       
-            <AccordionComponent>
-                <AccordionItemsDirective >
-                    <AccordionItemDirective id="zoning-strict-height" header = "Permitted Uses" content={childcomp}/>
-                    <AccordionItemDirective header = "Conditional Uses" content={childcomp1}/>
-                </AccordionItemsDirective>
-            </AccordionComponent>
-                           
+        <AccordionComponent>
+            <AccordionItemsDirective >
+                <AccordionItemDirective id="zoning-strict-height" header="Permitted Uses" content={childcomp} />
+                <AccordionItemDirective header="Conditional Uses" content={childcomp1} />
+            </AccordionItemsDirective>
+        </AccordionComponent>
     )
 }
 
-
-
 export const Zoning = () => {
-
-    // const defaultProps = {
-    //     center: {
-    //       lat: 10.99835602,
-    //       lng: 77.01502627
-    //     },
-    //     zoom: 11
-    //   };
-
     return (
         <div className="report-content-content">
             <div className="report-content-content-header" id="item-4">
@@ -112,7 +95,7 @@ export const Zoning = () => {
             </div>
             <div>
                 <div id="map">
-                {/* <GoogleMapReact
+                    {/* <GoogleMapReact
                     bootstrapURLKeys={{ key: "AIzaSyA52qSFk7awgE8vvAo4U5-P0CUKe6wugk8" }}
                     defaultCenter={defaultProps.center}
                     defaultZoom={defaultProps.zoom}
@@ -140,7 +123,7 @@ export const Zoning = () => {
                 </AccordionComponent>
             </div>
             <div className="font-size-xs gray-dark mt-s mb-s">
-            Source(s): Zoneomics
+                Source(s): Zoneomics
             </div>
         </div>
     );
