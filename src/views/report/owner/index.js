@@ -117,7 +117,6 @@ export const Owner = () => {
                     </AccordionItemsDirective>
                 </AccordionComponent>
             </div>
-          
         </div>
     )
 }

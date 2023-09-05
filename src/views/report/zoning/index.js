@@ -1,7 +1,6 @@
 import './index.css';
 import { AccordionComponent, AccordionItemsDirective, AccordionItemDirective } from '@syncfusion/ej2-react-navigations';
 
-
 const childcomp = () => {
     return (
         <div className="childcomp-div">
@@ -95,17 +94,6 @@ export const Zoning = () => {
             </div>
             <div>
                 <div id="map">
-                    {/* <GoogleMapReact
-                    bootstrapURLKeys={{ key: "AIzaSyA52qSFk7awgE8vvAo4U5-P0CUKe6wugk8" }}
-                    defaultCenter={defaultProps.center}
-                    defaultZoom={defaultProps.zoom}
-                >
-                    <AnyReactComponent
-                    lat={59.955413}
-                    lng={30.337844}
-                    text="My Marker"
-                    />
-                </GoogleMapReact> */}
                 </div>
             </div>
             <div className="permit-accordian-div" id="item-4-1">

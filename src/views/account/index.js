@@ -1,9 +1,6 @@
-// import { useEffect } from 'react';
-
 // material-ui
 import { Link } from 'react-router-dom';
 import './index.css';
-// project imports
 
 // ==============================|| DEFAULT DASHBOARD ||============================== //
 

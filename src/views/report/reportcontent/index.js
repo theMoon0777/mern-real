@@ -1,16 +1,9 @@
-
 import "./index.css";
-
 export const ReportContent = () => {
-    //   const [isLoading, setLoading] = useState(true);
-    //   useEffect(() => {
-    //     setLoading(false);
-    //   }, []);
-
     return (
         <div className="report-content-content" id="item-12">
             <div className="report-content-content-header" id="item-12-1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#5C53C5" viewBox="0 0 256 256" style={{"marginTop": "3px"}}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#5C53C5" viewBox="0 0 256 256" style={{ "marginTop": "3px" }}>
                     <rect width="256" height="256" fill="none"></rect>
                     <path d="M200,56H56A23.9,23.9,0,0,0,32,80V192a23.9,23.9,0,0,0,24,24H200a23.9,23.9,0,0,0,24-24V80A23.9,23.9,0,0,0,200,56ZM164,184H92a20,20,0,0,1,0-40h72a20,20,0,0,1,0,40Z" opacity="0.2"></path>
                     <rect x="32" y="56" width="192" height="160" rx="24" fill="none" stroke="#5C53C5" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"></rect>
@@ -46,7 +39,7 @@ export const ReportContent = () => {
                 </div>
             </div>
             <div className="report-content-content-footer">
-                <textarea rows = "1" className="report-content-content-text"/>
+                <textarea rows="1" className="report-content-content-text" />
                 <button className="report-content-submit-btn">Submit</button>
             </div>
         </div>

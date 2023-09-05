@@ -48,7 +48,6 @@ export const ReportValuation = () => {
                     <TableBody>
                         {
                             !valuation.comparables ? "" : valuation.comparables.map((data, key) =>
-
                                 <TableRow
                                     key={key}
                                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}

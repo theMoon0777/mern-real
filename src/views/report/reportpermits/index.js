@@ -12,7 +12,6 @@ import Paper from '@mui/material/Paper';
 const tr1 = () => {
     return (
         <TableContainer component={Paper}>
-
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
                 <TableBody>
                     <TableRow
@@ -42,7 +41,6 @@ const tr1 = () => {
                 </TableBody>
             </Table>
         </TableContainer>
-
     )
 }
 const childcomp = () => {
@@ -65,9 +63,6 @@ const tablecomp = () => {
 }
 
 export const ReportPermits = () => {
-
-
-
     return (
         <div className="report-content-content">
             <div className="report-content-content-header" id="item-3">
