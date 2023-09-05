@@ -89,7 +89,7 @@ const single_table = () => {
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
                 <TableBody>
                     <TableRow
-                        key="0"
+                        key="100001"
                         sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                     >
                         <TableCell component="th" scope="row">
@@ -110,7 +110,7 @@ const single_table = () => {
                         </TableCell>
                     </TableRow>
                     <TableRow
-                        key="0"
+                        key="100002"
                         sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                     >
                         <TableCell component="th" scope="row">
@@ -131,7 +131,7 @@ const single_table = () => {
                         </TableCell>
                     </TableRow>
                     <TableRow
-                        key="0"
+                        key="100003"
                         sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                     >
                         <TableCell component="th" scope="row">
@@ -152,7 +152,7 @@ const single_table = () => {
                         </TableCell>
                     </TableRow>
                     <TableRow
-                        key="0"
+                        key="100004"
                         sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                     >
                         <TableCell component="th" scope="row">
@@ -173,7 +173,7 @@ const single_table = () => {
                         </TableCell>
                     </TableRow>
                     <TableRow
-                        key="0"
+                        key="100005"
                         sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                     >
                         <TableCell component="th" scope="row">
@@ -252,12 +252,6 @@ const tablecomp = () => {
     return (
         <AccordionComponent>
             <AccordionItemsDirective>
-                <AccordionItemDirective header={tr1} content={childcomp} />
-                <AccordionItemDirective header={tr1} content={childcomp} />
-                <AccordionItemDirective header={tr1} content={childcomp} />
-                <AccordionItemDirective header={tr1} content={childcomp} />
-                <AccordionItemDirective header={tr1} content={childcomp} />
-                <AccordionItemDirective header={tr1} content={childcomp} />
                 <AccordionItemDirective header={tr1} content={childcomp} />
             </AccordionItemsDirective>
         </AccordionComponent>

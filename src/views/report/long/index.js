@@ -202,21 +202,21 @@ const tr1 = () => {
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
                 <TableBody>
                     <TableRow
-                        key="0"
+                        key="100013"
                         sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                     >
                         <TableCell component="th" scope="row">
                             <div className="radio-div"></div>
                         </TableCell>
-                        <TableCell align="left">
+                        <TableCell className="hidden-th" align="left">
                             <p className="mb-xs">$1,099.355</p>
                             <p className="mb-xs font-size-xs">Min</p>
                         </TableCell>
-                        <TableCell align="left">
+                        <TableCell className="hidden-th" align="left">
                             <p className="mb-xs">$1,185,754</p>
                             <p className="mb-xs font-size-xs">Max</p>
                         </TableCell>
-                        <TableCell align="left">
+                        <TableCell className="hidden-th" align="left">
                             <p className="mb-xs">98</p>
                             <p className="mb-xs font-size-xs">Confidence</p>
                         </TableCell>
@@ -231,12 +231,6 @@ const tablecomp = () => {
     return (
         <AccordionComponent>
             <AccordionItemsDirective>
-                <AccordionItemDirective header={tr1} content={childcomp} />
-                <AccordionItemDirective header={tr1} content={childcomp} />
-                <AccordionItemDirective header={tr1} content={childcomp} />
-                <AccordionItemDirective header={tr1} content={childcomp} />
-                <AccordionItemDirective header={tr1} content={childcomp} />
-                <AccordionItemDirective header={tr1} content={childcomp} />
                 <AccordionItemDirective header={tr1} content={childcomp} />
             </AccordionItemsDirective>
         </AccordionComponent>

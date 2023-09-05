@@ -5,13 +5,12 @@ import logo from "./logo.png";
 //redux part
 import { useDispatch, useSelector } from 'react-redux';
 
-import { setValue } from '../../../store/slice/homeslice';
+// import { setValue } from '../../../store/slice/homeslice';
 
 import './index.css';
 
 import { AccordionComponent, AccordionItemsDirective, AccordionItemDirective } from '@syncfusion/ej2-react-navigations';
 import { useEffect } from 'react';
-import axios from 'axios';
 
 const gradient = (a, b) => {
   return (b.y - a.y) / (b.x - a.x);
@@ -64,20 +63,11 @@ const PlunkHomeValue = () => {
   const dispatch = useDispatch();
   const { value } = useSelector((state) => state.home);
 
-  const addressObj = {
-    fips: '04013',
-    apn: '301-55-105',
-    addressLineOne: '11635 S MOHAVE ST',
-    aptNum: '',
-    city: 'PHOENIX',
-    state: 'AZ',
-    zipcode: '85044'
-  };
 
   useEffect(() => {
-    axios.post('http://localhost:7000/api/home-value', addressObj).then((res) => {
-      dispatch(setValue(res.data));
-    });
+    // axios.post('http://localhost:7000/api/home-value', addressObj).then((res) => {
+    //   dispatch(setValue(res.data));
+    // });
   }, [dispatch]);
 
   useEffect(() => {

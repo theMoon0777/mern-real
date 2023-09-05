@@ -1,5 +1,4 @@
-import GoogleMapReact from 'google-map-react';
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+
 import { ProgressBarComponent } from '@syncfusion/ej2-react-progressbar';
 
 import Table from '@mui/material/Table';
@@ -94,7 +93,7 @@ const tr1 = () => {
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
                 <TableBody>
                     <TableRow
-                        key="0"
+                        key="100014"
                         sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                     >
                         <TableCell component="th" scope="row">
@@ -104,11 +103,11 @@ const tr1 = () => {
                             <p className="mb-xs">$1,099.355</p>
                             <p className="mb-xs font-size-xs">Min</p>
                         </TableCell>
-                        <TableCell align="left">
+                        <TableCell className="hidden-th" align="left">
                             <p className="mb-xs">$1,185,754</p>
                             <p className="mb-xs font-size-xs">Max</p>
                         </TableCell>
-                        <TableCell align="left">
+                        <TableCell className="hidden-th" align="left">
                             <p className="mb-xs">98</p>
                             <p className="mb-xs font-size-xs">Confidence</p>
                         </TableCell>
@@ -123,12 +122,6 @@ const tablecomp = () => {
     return (
         <AccordionComponent>
             <AccordionItemsDirective>
-                <AccordionItemDirective header={tr1} content={childcomp} />
-                <AccordionItemDirective header={tr1} content={childcomp} />
-                <AccordionItemDirective header={tr1} content={childcomp} />
-                <AccordionItemDirective header={tr1} content={childcomp} />
-                <AccordionItemDirective header={tr1} content={childcomp} />
-                <AccordionItemDirective header={tr1} content={childcomp} />
                 <AccordionItemDirective header={tr1} content={childcomp} />
             </AccordionItemsDirective>
         </AccordionComponent>
@@ -203,13 +196,7 @@ const neigh_spinner = () => {
 }
 
 export const Neighburhood = () => {
-    const defaultProps = {
-        center: {
-            lat: 10.99835602,
-            lng: 77.01502627
-        },
-        zoom: 11
-    };
+
     return (
         <div className='report-content-content'>
             <div className="report-content-content-header" id="item-10">
@@ -229,17 +216,7 @@ export const Neighburhood = () => {
             </div>
             <div className="permit-accordian-div" id="item-10-1">
                 <div id="map">
-                    <GoogleMapReact
-                        bootstrapURLKeys={{ key: "AIzaSyA52qSFk7awgE8vvAo4U5-P0CUKe6wugk8" }}
-                        defaultCenter={defaultProps.center}
-                        defaultZoom={defaultProps.zoom}
-                    >
-                        <AnyReactComponent
-                            lat={59.955413}
-                            lng={30.337844}
-                            text="My Marker"
-                        />
-                    </GoogleMapReact>
+
                 </div>
             </div>
             <div className="permit-accordian-div" id="item-10-2">

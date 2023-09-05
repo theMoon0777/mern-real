@@ -13,35 +13,35 @@ const tr1 = () => {
     return (
         <TableContainer component={Paper}>
 
-        <Table sx={{ minWidth: 650 }} aria-label="simple table">
-        <TableBody>
-            <TableRow
-                key="0"
-                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                >
-                <TableCell component="th" scope="row">
-                        <p className="mb-xs">$1,127,300</p>
-                        <p className="mb-xs font-size-xs">Valuation</p>
-                </TableCell>
-                <TableCell className="hidden-th" align="left">
-                    <p className="mb-xs">$1,099.355</p>
-                    <p className="mb-xs font-size-xs">Min</p>
+            <Table sx={{ minWidth: 650 }} aria-label="simple table">
+                <TableBody>
+                    <TableRow
+                        key="100015"
+                        sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                    >
+                        <TableCell component="th" scope="row">
+                            <p className="mb-xs">$1,127,300</p>
+                            <p className="mb-xs font-size-xs">Valuation</p>
+                        </TableCell>
+                        <TableCell className="hidden-th" align="left">
+                            <p className="mb-xs">$1,099.355</p>
+                            <p className="mb-xs font-size-xs">Min</p>
 
-                </TableCell>
-                <TableCell className="hidden-th" align="left">
-                    <p className="mb-xs">$1,185,754</p>
-                    <p className="mb-xs font-size-xs">Max</p>
+                        </TableCell>
+                        <TableCell className="hidden-th" align="left">
+                            <p className="mb-xs">$1,185,754</p>
+                            <p className="mb-xs font-size-xs">Max</p>
 
-                </TableCell>
-                <TableCell className="hidden-th" align="left">
-                    <p className="mb-xs">98</p>
-                    <p className="mb-xs font-size-xs">Confidence</p>
+                        </TableCell>
+                        <TableCell className="hidden-th" align="left">
+                            <p className="mb-xs">98</p>
+                            <p className="mb-xs font-size-xs">Confidence</p>
 
-                </TableCell>
-            </TableRow>
-            </TableBody>
-                        </Table>
-                    </TableContainer>
+                        </TableCell>
+                    </TableRow>
+                </TableBody>
+            </Table>
+        </TableContainer>
 
     )
 }
@@ -55,25 +55,19 @@ const childcomp = () => {
     )
 }
 const tablecomp = () => {
-    return (            
-            <AccordionComponent>
-                <AccordionItemsDirective>
-                    <AccordionItemDirective header = {tr1} content={childcomp}/>
-                    <AccordionItemDirective header = {tr1} content={childcomp}/>
-                    <AccordionItemDirective header = {tr1} content={childcomp}/>
-                    <AccordionItemDirective header = {tr1} content={childcomp}/>
-                    <AccordionItemDirective header = {tr1} content={childcomp}/>
-                    <AccordionItemDirective header = {tr1} content={childcomp}/>
-                    <AccordionItemDirective header = {tr1} content={childcomp}/>
-                </AccordionItemsDirective>
-            </AccordionComponent>                    
+    return (
+        <AccordionComponent>
+            <AccordionItemsDirective>
+                <AccordionItemDirective header={tr1} content={childcomp} />
+            </AccordionItemsDirective>
+        </AccordionComponent>
     )
 }
 
 export const ReportPermits = () => {
-    
-    
-  
+
+
+
     return (
         <div className="report-content-content">
             <div className="report-content-content-header" id="item-3">
@@ -103,9 +97,9 @@ export const ReportPermits = () => {
                     </AccordionItemsDirective>
                 </AccordionComponent>
             </div>
-            
+
             <div className="font-size-xs gray-dark mt-s mb-s">
-            Source(s): ATTOM Data
+                Source(s): ATTOM Data
             </div>
         </div>
     );
